@@ -1,15 +1,15 @@
 development:
-  host: dev.example.com
-  email: john@doe.net
-  password: apassword
-  # api_key: <your api key here>
+  host: localhost:8080
+  email: ENV['LOCOMOTIVE_EMAIL']
+  password: ENV['LOCOMOTIVE_PASSSWORD']
+  api_key: b78473ec15d10323446f904e41653334613ccc33
 staging:
-  host: staging.example.com
+  host: localhost:8080
   email: john@doe.net
   password: apassword
-  # api_key: <your api key here>
+  # api_key: b78473ec15d10323446f904e41653334613ccc33
 production:
-  host: www.example.com
+  host: localhost:8080
   email: john@doe.net
   password: apassword
-  # api_key: <your api key here>
+  # api_key: b78473ec15d10323446f904e41653334613ccc33
