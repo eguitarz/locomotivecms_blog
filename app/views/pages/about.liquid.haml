@@ -23,7 +23,8 @@ published: true
 {% extends parent %}
 
 {% block main %}
-
-%p Hello world
+.img-box
+	%img{src:"{{ 'gyeongbokgung-full.jpg' | theme_image_url | resize: '400x' }}", alt:"Gyeongbokgung"}
+	%p Gyeongbokgung, Seoul
 
 {% endblock %}

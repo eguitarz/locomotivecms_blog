@@ -13,9 +13,10 @@ published: true
     %meta{content: "{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.meta_description }}{% endif %}", name: "description"}/
     %meta{content: "{{ site.meta_keywords }} {{ page.meta_keywords }}", name: "keywords"}/
     %meta{content: "width=device-width, initial-scale=1, maximum-scale=1", name: "viewport"}/
-  %body
+  %body{class:"{{ page.slug }}"}
     %p
       {{ 'bootstrap.css' | stylesheet_tag }}
+      {{ 'styles.css' | stylesheet_tag }}
       /[if lt IE 9]
         <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     .container
