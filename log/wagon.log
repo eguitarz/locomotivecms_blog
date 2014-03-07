@@ -14,3 +14,13 @@ Found page "Home page" [index]
 * Reloaded "site", "content_types", "pages", "snippets", "content_entries", "translations" at 2014-03-07 17:11:40 +0800
 * Reloaded "site", "content_types", "pages", "snippets", "content_entries", "translations" at 2014-03-07 17:12:54 +0800
 * Reloaded "site", "content_types", "pages", "snippets", "content_entries", "translations" at 2014-03-07 17:13:15 +0800
+* Reloaded "pages", "snippets" at 2014-03-07 17:33:40 +0800
+* Reloaded "pages", "snippets" at 2014-03-07 17:34:45 +0800
+* Reloaded "pages", "snippets" at 2014-03-07 17:35:33 +0800
+[0;97;49mStarted GET "/" at 2014-03-07 17:35:44 +0800[0m
+Detecting locale EN
+Found page "Home" [index]
+  Rendered liquid page template
+[0;32;49mCompleted 200 OK in 9.7ms
+
+[0m
