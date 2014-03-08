@@ -47,8 +47,11 @@ published: true
         .col-md-10.col-md-offset-1.col-sm-12
           %h2 {{ page.title }}
           {% block main %}
-          Coming Soon.
+          %p Coming Soon.
+          {% assign photo = "temppeliaukio.jpg" | theme_image_url %}
+          {% include 'img_box' with photo, caption: "Temppeliaukio Church, Helsinki", size: "1000x300#" %}
           {% endblock %}
+          {% include 'footer' %}
     / Javascripts
     %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js", type: "text/javascript"}
     {{ 'bootstrap.min.js' | javascript_tag }}

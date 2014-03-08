@@ -3,6 +3,7 @@ $(document).ready(function(){
   // if they click on a boxed image, enlarge it
   $('div.img-box a').click(function(event) {
     event.preventDefault();
+    console.log(this);
     var box =
       '<div id="lightbox">' +
       '<p>Click to Close</p>' +
