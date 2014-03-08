@@ -8,8 +8,8 @@ published: true
     %meta{content: "text/html; charset=UTF-8", "http-equiv" => "content-type"}/
     %meta{charset: "utf-8"}/
     %title
-      {{ page.title }} - {{ site.name }}
-      | {% if page.seo_title %}{{ page.seo_title }}{% else %}{{ site.seo_title }}{% endif %}
+      {{ page.title | escape }} - {{ site.name | escape }}
+      | {% if page.seo_title %}{{ page.seo_title | escape }}{% else %}{{ site.seo_title | escape }}{% endif %}
     %meta{content: "{% if page.meta_description %}{{ page.meta_description }}{% else %}{{ site.meta_description }}{% endif %}", name: "description"}/
     %meta{content: "{{ site.meta_keywords }} {{ page.meta_keywords }}", name: "keywords"}/
     %meta{content: "width=device-width, initial-scale=1, maximum-scale=1", name: "viewport"}/
@@ -24,7 +24,7 @@ published: true
       / Site Title
       .row
         .col-md-10.col-md-offset-1.col-sm-12
-          %h1 {{ site.name }}
+          %h1 {{ site.name | escape }}
       / Site Navigation
       .row
         .col-md-10.col-md-offset-1.col-sm-12
@@ -45,7 +45,7 @@ published: true
       / Page Content
       .row
         .col-md-10.col-md-offset-1.col-sm-12
-          %h2 {{ page.title }}
+          %h2 {{ page.title | escape }}
           {% block main %}
           %p Coming Soon.
           {% assign photo = "temppeliaukio.jpg" | theme_image_url %}
