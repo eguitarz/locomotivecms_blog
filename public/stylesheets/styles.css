@@ -73,3 +73,30 @@ footer p {
 body.posts div.post-listing {
   margin-bottom: 20px;
 }
+
+/* posts/content_type_template.liquid */
+article.post p.tags span {
+  margin-left: 10px;
+}
+
+article.post h3.posted-at {
+  font-size: 20px;
+  margin-top: 0px;
+  color: #999;
+}
+
+/* home page */
+body.index .jumbotron {
+  color: #fff;
+  text-align: justify;
+  background-image: url('../images/edmonton.jpg');
+  background-position: center top;
+}
+body.index .jumbotron {
+  padding-top: 10px;
+  padding-bottom: 25%;
+}
+
+div.photos div.img-box {
+  margin-bottom: 20px;
+}
