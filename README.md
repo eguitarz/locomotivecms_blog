@@ -1,7 +1,9 @@
 locomotivecms_blog
 ==================
 
-A blog implement according to http://doc.locomotivecms.com/making-blog/
+LocomotiveCMS is a popular CMS written in Ruby. There is a simple tutorial (http://doc.locomotivecms.com/making-blog/) about using Locomotive to build up a blog from scratch.
+
+This repo is made to practicing / implementing that tutorial.
 
 Prerequisites
 ---
